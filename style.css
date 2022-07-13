@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: hsl(217, 54%, 11%);
+}
+
+.containor{
+    background-color: hsl(216, 50%, 16%);
+    width: 322px;
+    height: fit-content;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    display: grid;
+    grid-template-rows: 302px auto;
+    font-family: 'Outfit', sans-serif;
+}
+
+.image-box{
+    width: 100%;
+    height: 100%;
+    background-image: url("images/image-equilibrium.jpg");
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.info-all{
+    margin-top: 20px;
+}
+
+.title{
+    color: white;
+    font-weight: 600;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.details{
+    color: hsl(215, 51%, 70%);
+    font-weight: 300;
+    margin-bottom: 25px;
+}
+
+.two-icons{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.left-icon::after{
+    content: "0.041 ETH";
+    color: hsl(178, 100%, 50%);
+    position: absolute;
+    transform: translate(5px ,-2px);
+}
+
+.right-icon{
+    margin-right: 76px;
+}
+
+.right-icon span{
+    margin-right: 2px;
+}
+
+.right-icon::after{
+    content: "3 days left";
+    color: hsl(215, 51%, 70%);
+    position: absolute;
+    transform: translate(5px ,-2px);
+    margin-right: 10px
+}
+
+.person-icon{
+    display: flex;
+    justify-content: left;
+    margin-bottom: 10px;
+}
+
+.image-person{
+    background-image: url("images/image-avatar.png");
+    width: calc(132px / 4);
+    height: calc(132px / 4);
+    background-size: cover;
+    border-radius: 50%;
+    outline: none;
+    border: 1px solid white;
+}
+
+.discription-person{
+    display: flex;
+    justify-content: left;
+}
+
+.discription-person p{
+    color: hsl(215, 51%, 70%);
+    position: absolute;
+    transform: translate(16px, 5px);
+    text-align: center;
+}
+
+.discription-person p span{
+    color: white;
+}
+
+.info-all hr{
+    transform: translate();
+    margin-bottom: 15px;
+    border: 1px solid hsl(215, 32%, 27%);
+}
+
+.other-info{
+    color: white;
+    font-family: 'Outfit', sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(0px ,0px);
+}
+
+.other-info a{
+    text-decoration: none;
+}
+
+.challenger{
+    color: darkgoldenrod;
+}
+
+.programmer{
+    color: green;
+}
+
+@media (max-width:375px){
+
+    .containor{
+        transform: translate(-53% ,-50%);
+    }
+
+    .other-info{
+        top: 0;
+    }
+}
